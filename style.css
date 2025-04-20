@@ -1,0 +1,20 @@
+/* 设置网页整体样式，让图片居中显示 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    background-color: #f0f0f0; /* 给网页设置一个浅色背景，方便观察效果 */
+}
+
+.image-container img {
+    width: 300px;  /* 设置图片大小 */
+    height: auto;  /* 保持图片比例 */
+    transition: transform 0.5s ease;  /* 添加平滑过渡效果，持续 0.5 秒 */
+}
+
+.image-container img:hover {
+    transform: rotate(360deg);  /* 当鼠标悬停时，顺时针旋转 360 度 */
+}
