@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人介绍</title>
+  <link rel="stylesheet" type="text/css" href="assets/fullPage.js-master/dist/fullpage.css" /> <!-- 引用 fullpage.css -->
+  <script src="assets/fullPage.js-master/vendors/easings.js"></script> <!-- 引用 easing 动画库 -->
+  <script type="text/javascript" src="assets/fullPage.js-master/dist/fullpage.js"></script> <!-- 引用 fullpage.js -->
+  <style>
+    /* 页面样式 */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    section {
+      text-align: center;
+      font-size: 24px;
+      color: white;
+    }
+
+    #section1 {
+      background: #3498db; /* 蓝色背景 */
+    }
+
+    #section2 {
+      background: #2ecc71; /* 绿色背景 */
+    }
+
+    #section3 {
+      background: #e74c3c; /* 红色背景 */
+    }
+
+    #section4 {
+      background: #9b59b6; /* 紫色背景 */
+    }
+
+    #section5 {
+      background: #f1c40f; /* 黄色背景 */
+    }
+  </style>
+</head>
+<body>
+  <div id="fullpage">
+    <div class="section" id="section1">
+      
+    </div>
+    <div class="section" id="section2">
+      
+    </div>
+    <div class="section" id="section3">
+      
+    </div>
+    <div class="section" id="section4">
+      
+    </div>
+    <div class="section" id="section5">
+     
+    </div>
+  </div>
+
+  <script>
+    // 初始化 fullpage.js
+    new fullpage('#fullpage', {
+      autoScrolling: true, // 启用自动滚动
+      navigation: true, // 显示导航点
+      navigationPosition: 'right', // 导航点位置
+      css3: true, // 启用 CSS3 动画
+    });
+  </script>
+</body>
+</html>
